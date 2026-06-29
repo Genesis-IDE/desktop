@@ -1,8 +1,8 @@
-# TurboWarp Desktop
+# Genesis IDE Desktop
 
-TurboWarp as a desktop app.
+Genesis IDE as a desktop app.
 
-If you're looking for downloads, head to: https://desktop.turbowarp.org/
+If you're looking for downloads, head to: https://genesis-ide.github.io/desktop
 
 Licensed under the GPLv3.0. See LICENSE for more information.
 
