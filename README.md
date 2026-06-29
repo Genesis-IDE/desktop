@@ -73,7 +73,7 @@ We've found that development can work pretty well if you open two terminals side
 
 ## Linux sandbox helper error
 
-On some Linux distributions, Electron will crash with the message `The SUID sandbox helper binary was found, but is not configured correctly. Rather than run without sandboxing I'm aborting now. You need to make sure that /home/.../turbowarp-desktop/node_modules/electron/dist/chrome-sandbox is owned by root and has mode 4755.`. Notably we have seen this happen on Debian 10 and earlier and Ubuntu 24.04 and later.
+On some Linux distributions, Electron will crash with the message `The SUID sandbox helper binary was found, but is not configured correctly. Rather than run without sandboxing I'm aborting now. You need to make sure that /home/.../genesis-ide-desktop/node_modules/electron/dist/chrome-sandbox is owned by root and has mode 4755.`. Notably we have seen this happen on Debian 10 and earlier and Ubuntu 24.04 and later.
 
 For development, you can run these commands to enable unprivileged user namespaces until you reboot:
 
@@ -114,28 +114,28 @@ You can typically only package for a certain operating system while on that oper
 
 ## Code signing policy
 
-TurboWarp Desktop uses a free code signing provided by [SignPath.io](https://about.signpath.io/), certificate by [SignPath Foundation](https://signpath.org/).
+Genesis IDE Desktop uses a free code signing provided by [SignPath.io](https://about.signpath.io/), certificate by [SignPath Foundation](https://signpath.org/).
 
  * Approvers:
-   * [GarboMuffin](https://github.com/GarboMuffin)
+   * [GaiaWindWave90](https://github.com/GaiaWindWave90)
  * Privacy policy: https://desktop.turbowarp.org/privacy.html
 
 ## Advanced customizations
 
-TurboWarp Desktop lets you configure custom JS and CSS without rebuilding the app.
+Genesis IDE Desktop lets you configure custom JS and CSS without rebuilding the app.
 
-Find TurboWarp Desktop's data path by using the list below or by clicking "?" in the top right corner, then "Desktop Settings", then "Open User Data", then opening the highlighted folder, or refer to this list:
+Find Genesis IDE Desktop's data path by using the list below or by clicking "?" in the top right corner, then "Desktop Settings", then "Open User Data", then opening the highlighted folder, or refer to this list:
 
- - Windows (except Microsoft Store): `%APPDATA%/turbowarp-desktop`
- - Microsoft Store: Open `%LOCALAPPDATA%/Packages`, find the folder with the word `TurboWarpDesktop` in it, then open `LocalCache/Roaming/turbowarp-desktop`
- - macOS (except Mac App Store): `~/Library/Application Support/turbowarp-desktop`
- - Mac App Store: `~/Library/Containers/org.turbowarp.desktop/Data/Library/Application Support/turbowarp-desktop` (note that the `org.turbowarp.desktop` part may appear as `TurboWarp` in Finder)
- - Linux (except Flatpak and Snap): `~/.config/turbowarp-desktop`
- - Linux (Flatpak): `~/.var/app/org.turbowarp.TurboWarp/config/turbowarp-desktop`
- - Linux (Snap): `~/snap/turbowarp-desktop/current/.config/turbowarp-desktop`
+ - Windows (except Microsoft Store): `%APPDATA%/genesis-ide-desktop`
+ - Microsoft Store: Open `%LOCALAPPDATA%/Packages`, find the folder with the word `Genesis IDEDesktop` in it, then open `LocalCache/Roaming/genesis-ide-desktop`
+ - macOS (except Mac App Store): `~/Library/Application Support/genesis-ide-desktop`
+ - Mac App Store: `~/Library/Containers/org.turbowarp.desktop/Data/Library/Application Support/genesis-ide-desktop` (note that the `org.turbowarp.desktop` part may appear as `Genesis IDE` in Finder)
+ - Linux (except Flatpak and Snap): `~/.config/genesis-ide-desktop`
+ - Linux (Flatpak): `~/.var/app/org.turbowarp.Genesis IDE/config/genesis-ide-desktop`
+ - Linux (Snap): `~/snap/genesis-ide-desktop/current/.config/genesis-ide-desktop`
 
-Create the file `userscript.js` in this folder to configure custom JS. Create the file `userstyle.css` in this folder to configure custom CSS. Completely restart TurboWarp Desktop (including all windows) to apply.
+Create the file `userscript.js` in this folder to configure custom JS. Create the file `userstyle.css` in this folder to configure custom CSS. Completely restart Genesis IDE Desktop (including all windows) to apply.
 
 ## Uninstall
 
-See https://desktop.turbowarp.org/uninstall
+See https://genesis-ide.github.io/desktop/uninstall
